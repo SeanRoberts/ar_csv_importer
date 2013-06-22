@@ -7,14 +7,14 @@ module ARCSVImporter
       self.csv_importer_row_order = row_order
 
       def self.csv_import(file_path)
-        importer.import
+        importer(file_path).import
       end
 
       def self.csv_import!(file_path)
-        importer.import(true)
+        importer(file_path).import(true)
       end
 
-      def self.importer
+      def self.importer(file_path)
         @importer ||= ARCSVImporter::Importer.new(file_path, self, self.csv_importer_row_order)
       end
     end
