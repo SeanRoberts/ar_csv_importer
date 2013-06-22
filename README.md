@@ -5,6 +5,7 @@ Man am I ever sick of writing the same code over and over again to import CSV re
 
 ### Requirements
 Ruby: >= 1.9.3
+
 Rails: >= 3.2
 
 ### Installation
