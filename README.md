@@ -24,7 +24,7 @@ Let's imagine you have a Merchant class.  The class has a title, an address, a U
        has_csv_importer :title, :address, :url, :description
     end
 
-Note that the order that you list your attributes should match the other of the fields in your CSV.
+Note that the order that you list your attributes should match the order of the fields in your CSV.
 
 **Running the import:**
 
